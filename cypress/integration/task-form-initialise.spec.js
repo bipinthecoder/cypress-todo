@@ -5,7 +5,7 @@ describe('App Initialisation', () => {
         
     // });
 
-    it.only("Should load data from api on componentDidMount",()=>{
+    it("Should load data from api on componentDidMount",()=>{
         
 
         cy.server()
@@ -14,5 +14,11 @@ describe('App Initialisation', () => {
         cy.get(".task-list li")
         .should("have.length",3)
        
+    })
+
+    it("item list should have checkbox",()=>{
+        // cy.get(".task-list li")
+        cy.get('[type="checkbox"]')
+        .should("have.class","check-box")
     })
 });

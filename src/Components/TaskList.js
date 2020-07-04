@@ -3,6 +3,7 @@ import React from 'react'
 const TaskItem = ( {data} )=>
   <li>
     <div >
+      <input type="checkbox" className="check-box"/>
       <label>
         {data.title}
       </label>
