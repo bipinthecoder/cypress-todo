@@ -25,7 +25,7 @@ export default class TodoApp extends Component {
   onSubmit = (e)=>{
     e.preventDefault();
     let payload = {
-      title:this.state.newTaskName
+      title:this.state.newTaskName,
     }
 
     addTask(payload)
