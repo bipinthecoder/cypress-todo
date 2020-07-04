@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react'
 import TaskItem from "./TaskItem";
 
@@ -57,15 +58,22 @@ class TaskItem extends Component {
 //     <div >
 //       <input type="checkbox" className="check-box" />
 >>>>>>> 203db75b99687e79fae9856f0fdb9be3a1a834b3
+=======
+import React from 'react'
+import TaskItem from "./TaskItem";
+// const TaskItem = ( {data} )=>
+//   <li className="success">
+//     {/* <div className="success" > */}
+//     <div >
+//       <input type="checkbox" className="check-box"/>
+>>>>>>> 58225967b19c7082ce3882abc8256f0de88de91a
 //       <label>
 //         {data.title}
 //       </label>
 //     </div>
 //   </li>
-
 const TaskList = props =>
   <ul className="task-list">
     {props.todos.map(todo => <TaskItem key={todo.id} data={todo} />)}
   </ul>
-
 export default TaskList
